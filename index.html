@@ -1,0 +1,157 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AO2</title>
+    <link href="css/app.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+
+    <div class="hidden-md hidden-lg only-mobile">
+      <div class="container">
+        <h2>Attention, ce prototype n'est destiné qu'à la partie ordinateur.</h2>
+      </div>
+    </div>
+
+    <div class="container-fluid hidden-xs hidden-sm">
+
+      <nav class="navbar navbar-default navbar-main">
+        <div class="row">
+          <div class="col-md-10 col-md-offset-1">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">
+                <img src="img/brand/logo.png" class="navbar-logo">
+              </a>
+            </div>
+            <div id="navbar" class="collapse navbar-collapse">
+              <ul class="nav navbar-nav navbar-right game-steps">
+              </ul>
+            </div><!--/.nav-collapse -->
+          </div>
+        </div>
+      </nav>
+
+      <div class="row">
+        <div class="col-md-offset-1 col-md-10">
+
+          <div class="pages">
+            <div class="page page-blue page-start" style="display: none;">
+              <div class="row">
+                <div class="col-md-8">
+                  <h1 class="title">Candidats à la Présidentielle de 2017 </h1>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6 col-md-offset-6">
+                  <div class="start-text">
+                    Connaissez-vous réellement les programmes des candidats à l’élection présidentielle de 2017 ?
+                    Pour chaque catégorie, nous vous proposons de
+                    <span class="text-highlight">glisser/déposer</span> les propositions sur le candidat correspondant.
+                  </div>
+                  <a href="#" class="start-action">
+                    À vous de jouer !
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="page page-blue page-select" style="display: none;">
+              <h2 class="title">Pour tester vos connaissances, choisissez une des <span class="text-highlight">catégories</span> suivantes</h2>
+              <div class="row select-choice">
+                <div class="col-md-4">
+                  <a href="#" class="choice choice-random">Aléatoire</a>
+                </div>
+                <div class="col-md-4 select-left"></div>
+                <div class="col-md-4 select-right"></div>
+              </div>
+            </div>
+            <div class="page page-game" style="display: none;">
+
+              <div class="row">
+                <div class="col-md-3">
+                  <ul class="theme-list">
+                  </ul>
+                </div>
+                <div class="col-md-9">
+                  <div style="display: none;" class="btn-game-submit btn btn-success btn-lg pull-right"><i class="glyphicon glyphicon-ok"></i> Valider</div>
+                  <h3 class="game-task">Glissez/déposez les propositions sur les candidats correspondants</h3>
+                  <div class="clearfix"></div>
+                  <div class="row card-game">
+                  </div>
+                  <div class="flash flash-info flash-next-step" style="display: none;">
+                    <a href="#" class="flash-action">
+                      <div class="flash-action-img">
+                        <img src="img/ui/next-step.svg" alt="">
+                      </div>
+                      <div class="flash-action-message"></div>
+                    </a>
+                    <span class="flash-text"></span>
+                  </div>
+                  <div class="game-template">
+                    <div class="col-md-4 card-slot" data-template="card">
+                      <div class="card card-candidate">
+                        <div class="card-mask">
+                          <h1 class="card-title"></h1>
+                        </div>
+                        <div class="card-thumbnail-wrapper">
+                          <img src="" class="card-thumbnail img-responsive" alt="">
+                        </div>
+                        <div class="card-result card-result-success">
+                          <img src="img/ui/result-success.svg" alt="">
+                        </div>
+                        <div class="card-result card-result-error">
+                          <img src="img/ui/result-error.svg" alt="">
+                        </div>
+                      </div>
+                      <div class="card card-program">
+                        <div class="card-program-inner">
+                          <div class="card-text"></div>
+                          <div class="action action-bottom">en savoir plus</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="page page-blue page-points" style="display: none;">
+              <div class="row">
+                <div class="col-md-6">
+                  <h1 class="title points-count">
+                    Vous totalisez 0 points sur 0
+                  </h1>
+                </div>
+                <div class="col-md-6 share-action">
+                  <div class="share-msg">
+                    partager mon score
+                  </div>
+                  <div class="clearfix"></div>
+                  <div class="share-img">
+                    <img src="img/ui/share.png" class="img-responsive" alt="">
+                  </div>
+                  <div class="clearfix"></div>
+                </div>
+              </div>
+              <div class="continue-action">
+                continuer
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="js/libs.js"></script>
+    <script src="js/app.js"></script>
+    <script src="resources/data.js"></script>
+
+  </body>
+</html>
