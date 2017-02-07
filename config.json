@@ -1,0 +1,53 @@
+{
+  "server": {
+    "directory": "dist/"
+  },
+  "tasks": {
+    "html": {
+      "src": [
+        "src/*.html"
+      ],
+      "dest": "dist/"
+    },
+    "script": {
+      "libs": [
+        "node_modules/jquery/dist/jquery.js",
+        "node_modules/gsap/TweenLite.js",
+        "node_modules/gsap/CSSPlugin.js",
+        "node_modules/gsap/Draggable.js",
+        "node_modules/bootstrap/dist/js/bootstrap.js"
+      ],
+      "src": [
+        "src/js/main.js",
+        "src/js/app/*.js"
+      ],
+      "dest": "dist/js/"
+    },
+    "style": {
+      "src": [
+        "node_modules/bootstrap/dist/css/bootstrap.css",
+        "src/scss/**/*.scss"
+      ],
+      "dest": "dist/css/"
+    },
+    "image": {
+      "src": [
+        "src/img/**/*"
+      ],
+      "dest": "dist/img/"
+    },
+    "resources": {
+      "src": [
+        "src/resources/**/*"
+      ],
+      "dest": "dist/resources/"
+    },
+    "fonts": {
+      "src": [
+        "node_modules/bootstrap/dist/fonts/*",
+        "src/fonts/**/*"
+      ],
+      "dest": "dist/fonts/"
+    }
+  }
+}
